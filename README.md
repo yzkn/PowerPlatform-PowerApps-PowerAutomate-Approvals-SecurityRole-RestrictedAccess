@@ -66,6 +66,7 @@ Dataverseテーブルのファイル列・画像列を利用して添付ファ�
 | バージョン             | 内容                     |
 | ---------------------- | ------------------------ |
 | Takeda                 | Dataverseテーブルの定義  |
+| Takeda_CloudFlows      | クラウドフローの定義     |
 | Takeda_ModelDrivenApps | モデル駆動型アプリの定義 |
 |                        |                          |
 
