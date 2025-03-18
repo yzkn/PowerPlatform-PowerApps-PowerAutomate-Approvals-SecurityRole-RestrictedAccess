@@ -7,42 +7,31 @@
       <Entity type="Class">
         <Name>tkd_application</Name>
         <Access>Public</Access>
-        <Location left="642" top="370" />
+        <Location left="411" top="354" />
         <Size width="162" height="349" />
         <Collapsed>False</Collapsed>
         <Member type="Field"> tkd_applicationid</Member>
-        <Member type="Field"> tkd_applicationpriority</Member>
-        <Member type="Field"> tkd_applicationstatus</Member>
-        <Member type="Field"> tkd_applicationtype</Member>
         <Member type="Field"> tkd_appliedby</Member>
         <Member type="Field"> tkd_approvalroute</Member>
-        <Member type="Field"> tkd_applicationpriorityname</Member>
+        <Member type="Field"> tkd_applicationstatus</Member>
         <Member type="Field"> tkd_applicationstatusname</Member>
+        <Member type="Field"> tkd_applicationtype</Member>
         <Member type="Field"> tkd_applicationtypename</Member>
         <Member type="Field"> tkd_appliedbyname</Member>
         <Member type="Field"> tkd_appliedbyyominame</Member>
         <Member type="Field"> tkd_appliedon</Member>
         <Member type="Field"> tkd_approvalroutename</Member>
         <Member type="Field"> tkd_detail</Member>
+        <Member type="Field"> tkd_piority</Member>
+        <Member type="Field"> tkd_piorityname</Member>
         <Member type="Field"> tkd_subject</Member>
         <Member type="Field"> tkd_summary</Member>
         <Modifier>None</Modifier>
       </Entity>
       <Entity type="Class">
-        <Name>tkd_applicationtype</Name>
-        <Access>Public</Access>
-        <Location left="1190" top="289" />
-        <Size width="162" height="216" />
-        <Collapsed>False</Collapsed>
-        <Member type="Field"> tkd_applicationtypeid</Member>
-        <Member type="Field"> tkd_code</Member>
-        <Member type="Field"> tkd_name</Member>
-        <Modifier>None</Modifier>
-      </Entity>
-      <Entity type="Class">
         <Name>tkd_approvalroute</Name>
         <Access>Public</Access>
-        <Location left="1190" top="572" />
+        <Location left="626" top="354" />
         <Size width="162" height="383" />
         <Collapsed>False</Collapsed>
         <Member type="Field"> tkd_approvalrouteid</Member>
@@ -68,14 +57,14 @@
       <Entity type="Class">
         <Name>tkd_approvalresult</Name>
         <Access>Public</Access>
-        <Location left="430" top="370" />
+        <Location left="198" top="455" />
         <Size width="162" height="247" />
         <Collapsed>False</Collapsed>
         <Member type="Field"> tkd_approvalresultid</Member>
         <Member type="Field"> tkd_application</Member>
-        <Member type="Field"> tkd_approvalstatus</Member>
         <Member type="Field"> tkd_approver</Member>
         <Member type="Field"> tkd_applicationname</Member>
+        <Member type="Field"> tkd_approvalstatus</Member>
         <Member type="Field"> tkd_approvalstatusname</Member>
         <Member type="Field"> tkd_approvername</Member>
         <Member type="Field"> tkd_approverorder</Member>
@@ -84,31 +73,9 @@
         <Modifier>None</Modifier>
       </Entity>
       <Entity type="Class">
-        <Name>tkd_approvalstatus</Name>
-        <Access>Public</Access>
-        <Location left="219" top="370" />
-        <Size width="162" height="216" />
-        <Collapsed>False</Collapsed>
-        <Member type="Field"> tkd_approvalstatusid</Member>
-        <Member type="Field"> tkd_name</Member>
-        <Member type="Field"> tkd_order</Member>
-        <Modifier>None</Modifier>
-      </Entity>
-      <Entity type="Class">
-        <Name>tkd_applicationstatus</Name>
-        <Access>Public</Access>
-        <Location left="1013" top="289" />
-        <Size width="162" height="216" />
-        <Collapsed>False</Collapsed>
-        <Member type="Field"> tkd_applicationstatusid</Member>
-        <Member type="Field"> tkd_name</Member>
-        <Member type="Field"> tkd_order</Member>
-        <Modifier>None</Modifier>
-      </Entity>
-      <Entity type="Class">
         <Name>tkd_attachmentfile</Name>
         <Access>Public</Access>
-        <Location left="523" top="767" />
+        <Location left="524" top="96" />
         <Size width="162" height="216" />
         <Collapsed>False</Collapsed>
         <Member type="Field"> tkd_attachmentfileid</Member>
@@ -123,7 +90,7 @@
       <Entity type="Class">
         <Name>tkd_attachmentimage</Name>
         <Access>Public</Access>
-        <Location left="765" top="767" />
+        <Location left="296" top="96" />
         <Size width="162" height="230" />
         <Collapsed>False</Collapsed>
         <Member type="Field"> tkd_attachmentimageid</Member>
@@ -137,19 +104,16 @@
         <Member type="Field"> tkd_subject</Member>
         <Modifier>None</Modifier>
       </Entity>
-      <Entity type="Class">
-        <Name>tkd_applicationpriority</Name>
-        <Access>Public</Access>
-        <Location left="839" top="289" />
-        <Size width="162" height="216" />
-        <Collapsed>False</Collapsed>
-        <Member type="Field"> tkd_applicationpriorityid</Member>
-        <Member type="Field"> tkd_code</Member>
-        <Member type="Field"> tkd_name</Member>
-        <Modifier>None</Modifier>
-      </Entity>
     </Entities>
     <Relationships>
+      <Relationship type="Association" first="0" second="2">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
       <Relationship type="Association" first="0" second="3">
         <Label>
         </Label>
@@ -158,15 +122,7 @@
         <Direction>Unidirectional</Direction>
         <AssociationType>Association</AssociationType>
       </Relationship>
-      <Relationship type="Association" first="0" second="6">
-        <Label>
-        </Label>
-        <StartOrientation>Vertical</StartOrientation>
-        <EndOrientation>Horizontal</EndOrientation>
-        <Direction>Unidirectional</Direction>
-        <AssociationType>Association</AssociationType>
-      </Relationship>
-      <Relationship type="Association" first="0" second="7">
+      <Relationship type="Association" first="0" second="4">
         <Label>
         </Label>
         <StartOrientation>Vertical</StartOrientation>
@@ -175,38 +131,6 @@
         <AssociationType>Association</AssociationType>
       </Relationship>
       <Relationship type="Association" first="1" second="0">
-        <Label>
-        </Label>
-        <StartOrientation>Vertical</StartOrientation>
-        <EndOrientation>Horizontal</EndOrientation>
-        <Direction>Unidirectional</Direction>
-        <AssociationType>Association</AssociationType>
-      </Relationship>
-      <Relationship type="Association" first="2" second="0">
-        <Label>
-        </Label>
-        <StartOrientation>Vertical</StartOrientation>
-        <EndOrientation>Horizontal</EndOrientation>
-        <Direction>Unidirectional</Direction>
-        <AssociationType>Association</AssociationType>
-      </Relationship>
-      <Relationship type="Association" first="4" second="3">
-        <Label>
-        </Label>
-        <StartOrientation>Vertical</StartOrientation>
-        <EndOrientation>Horizontal</EndOrientation>
-        <Direction>Unidirectional</Direction>
-        <AssociationType>Association</AssociationType>
-      </Relationship>
-      <Relationship type="Association" first="5" second="0">
-        <Label>
-        </Label>
-        <StartOrientation>Vertical</StartOrientation>
-        <EndOrientation>Horizontal</EndOrientation>
-        <Direction>Unidirectional</Direction>
-        <AssociationType>Association</AssociationType>
-      </Relationship>
-      <Relationship type="Association" first="8" second="0">
         <Label>
         </Label>
         <StartOrientation>Vertical</StartOrientation>
